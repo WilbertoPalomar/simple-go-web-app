@@ -64,12 +64,19 @@ When changes are made to the Go application, [AWS CodePipeline](https://aws.amaz
 
 This pipeline includes an (optional) manual approval stage between the staging and production environments. This can be useful if you are not yet at the stage where you can move to fully automated continuous deployment.
 
+### Exceptions
+
+* ACM was not provisioned hence redirect from HTTP (port 80) to HTTPS (port 443) can be provisioned separately
+* There's a need to create an s3 bucket in Sydney region (Follow Step 2 of Deployment Procedures carefully) so you will not encounter any issues.
  
 ## Deployment Procedures
 
 #### 1. Fork this GitHub repository to your GitHub account
 
 This new repository will be used for developing your application, infrastructure, and pipeline (through [AWS CloudFormation](https://aws.amazon.com/cloudformation)).
+
+#### 2. Create an S3 bucket in Sydney region with the following path for 'Specify an Amazon S3 template URL':
+https://s3.amazonaws.com/simple-go-web-app/cloudformation/pipeline.yml 
 
 #### 2. Deploy the pipeline to your AWS account
 
