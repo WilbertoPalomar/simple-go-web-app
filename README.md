@@ -118,3 +118,4 @@ If there are any failures in your test or build process, they will be displayed 
 * Option:  SAM Framework Implementation with CI/CD
 * Modularised CloudFormation separating user data config and use Ansible
 * Source Control to have 3 branches (Master, Release, and Develop) and utilise Pull Requests.
+* Ongoing fixes on any exceptions encountered
