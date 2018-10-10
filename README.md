@@ -1,3 +1,5 @@
+# Submitted: Wilberto Palomar (10 October 2018)
+
 # Infrastructure and CI/CD Architecture
 ![myarchitecture](images/Assembly-SimpleGo-Architecture.png)
 
@@ -9,6 +11,17 @@ Components:
  * [AWS CodeDeploy](https://aws.amazon.com/codedeploy/) for zero downtime deployments of your application(s). 
 
 This pipeline allows you easily apply [continuous delivery](https://aws.amazon.com/devops/continuous-delivery/) or [continuous deployment](https://aws.amazon.com/devops/continuous-delivery/) principles to your development lifecycle.
+
+### What has been added to the original repository?
+
+* Cloudformation Folder
+* CodeDeploy Folder
+* Config Folder
+* Images Folder
+* appspec.yml file
+* buildspec.yml file
+* main_test.go
+* modified README.md
 
 ### Infrastructure as code
 
@@ -97,3 +110,4 @@ If there are any failures in your test or build process, they will be displayed 
 * Use ECS Fargate
 * Option:  SAM Framework Implementation with CI/CD
 * Modularised CloudFormation separating user data config and use Ansible
+* Source Control to have 3 branches (Master, Release, and Develop) and utilise Pull Requests.
