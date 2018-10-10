@@ -1,4 +1,4 @@
-# Submitted: Wilberto Palomar (10 October 2018)
+# UPDATES: Wilberto Palomar (10 October 2018)
 
 # Infrastructure and CI/CD Architecture
 ![myarchitecture](images/Assembly-SimpleGo-Architecture.png)
