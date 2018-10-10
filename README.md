@@ -116,6 +116,6 @@ If there are any failures in your test or build process, they will be displayed 
 * Verbose Logging, Alerting and Dashboards using ELK Stack
 * Use ECS Fargate
 * Option:  SAM Framework Implementation with CI/CD
-* Modularised CloudFormation separating user data config and use Ansible
-* Source Control to have 3 branches (Master, Release, and Develop) and utilise Pull Requests.
+* Modularised CloudFormation separating user data config and use Ansible for idempotence
+* Source Control to have 3 branches (Master, Release, and Develop) and utilise Pull Requests
 * Ongoing fixes on any exceptions encountered
